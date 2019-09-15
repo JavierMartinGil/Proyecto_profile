@@ -1,0 +1,25 @@
+.signin{
+    background-color: #C1CFDA85;
+}
+
+.signup{
+    background-color: #1097f785;
+}
+
+.row.index{
+    height: 100vh;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.info .titulo{
+    margin: 80px 0px 40px 0px;
+}
+
+.info .btn{
+    margin: 40px 0;
+}
+
+.index{
+    background-image: url(../../assets/img/profiler-index.jpg)
+}
