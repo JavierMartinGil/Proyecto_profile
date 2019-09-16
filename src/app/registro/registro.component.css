@@ -1,0 +1,9 @@
+.formulario_registro{
+    max-width: 700px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.formulario_registro h1{
+    text-align: center;
+}
