@@ -1,0 +1,39 @@
+.login{
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background-color: #e6346280;
+}
+
+.form_login{
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background-color: white;
+}
+
+.form_login h1{
+    text-align: center;
+    background-color: #E63462;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    padding: 40px 0;
+}
+
+.container form{
+    padding: 50px 25px;
+}
+
+.form_login input{
+    border: none;
+    border-bottom: 2px solid #E63462;
+    border-radius: 0;
+}
+
+
+.form_login button{
+    background-color: #E63462;
+    border: none;
+    display: block;
+}

@@ -1,9 +1,37 @@
+.registro{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #210b3180;
+}
+
 .formulario_registro{
-    max-width: 700px;
-    border: 1px solid grey;
+    max-width: 600px;
     border-radius: 10px;
+    padding: 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+   background-color: white;
 }
 
 .formulario_registro h1{
     text-align: center;
+    background-color: #230C33;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    padding: 40px 0;
+}
+
+.container form{
+    padding: 50px 25px;
+}
+
+.formulario_registro input{
+    border: none;
+    border-bottom: 2px solid #230C33;
+    border-radius: 0;
+}
+
+.formulario_registro button{
+    background-color: #230C33;
+    border: none;
 }

@@ -13,7 +13,7 @@
 }
 
 .info .titulo {
-    margin: 100px 0px 40px 0px;
+    margin: 120px 0px 40px 0px;
     font-size: 4em;
 }
 
@@ -23,22 +23,28 @@
     border: 2px solid #333;
 }
 
-.index .signin{
-   
-    background: #1098f7; /* Old browsers */
-    background: -moz-linear-gradient(left,  #1098f7 0%, #55b5f4 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  #1098f7 0%,#55b5f4 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  #1098f7 0%,#55b5f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1098f7', endColorstr='#55b5f4',GradientType=1 ); /* IE6-9 */
-
+.index .signin{  
+    background: #E63462;
 }
 
-.index .signup{    
+.index .signup{
+    background: #230C33;
+    color: white;
+}
 
-    background: #c1cfda; /* Old browsers */
-    background: -moz-linear-gradient(left,  #c1cfda 0%, #869293 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  #c1cfda 0%,#869293 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  #c1cfda 0%,#869293 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1cfda', endColorstr='#869293',GradientType=1 ); /* IE6-9 */
+.index .signin .btn:hover{
+    color: white;
+    border-color: white;    
+    background-color: #230C33;
+}
 
+.index .signup .btn{
+    color: white;
+    border-color: white;
+}
+
+.index .signup .btn:hover{
+    color: white;
+    border-color: white;
+    background-color: #E63462;
 }

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { LoginService } from '../login.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,8 +12,12 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class LoginComponent implements OnInit {
 
   formulario_login: FormGroup;
+  arrUser: any;
 
-  constructor() {
+  constructor(private login: LoginService, private router: Router) {
+
+    this.arrUser = []
+
     this.formulario_login = new FormGroup({
       email: new FormControl('', [
         Validators.required,
@@ -28,14 +34,20 @@ export class LoginComponent implements OnInit {
 
   envioLogin() {
     console.log(this.formulario_login.value)
-    this.registro.registro(this.formulario_registro.value)
+    this.login.loguear(this.formulario_login.value)
       .then(response => {
-        if (response) {
-          this.router.navigate(['/gracias'])
+        console.log(response)
+        if (response['id'] == null) {
+          alert('Nombre de usuario o contraseña incorrecta')
+        } else {
+          this.arrUser = response
+          localStorage.setItem('usuario', response['id'])
+          this.router.navigate(['/perfil'])
         }
+
       })
       .catch(err => {
-        alert('Error en el registro. Inténtalo de nuevo más tarde.');
+        alert('Error en el login. Inténtalo de nuevo más tarde.');
       })
   }
 
