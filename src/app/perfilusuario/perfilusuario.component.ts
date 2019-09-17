@@ -7,7 +7,6 @@ import { PerfilService } from '../perfil.service';
   styleUrls: ['./perfilusuario.component.css']
 })
 export class PerfilusuarioComponent implements OnInit {
-
   perfil: any;
 
   constructor(private verPerfil: PerfilService) {
@@ -15,11 +14,10 @@ export class PerfilusuarioComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.verPerfil.obtenerPerfil(localStorage.getItem('usuario'))
+    this.verPerfil.obtenerPerfil()
       .then(response => {
-        console.log(response)
         this.perfil = response;
-
+        console.log(this.perfil);
       })
       .catch(err => {
         alert('Error en el login. Inténtalo de nuevo más tarde.');

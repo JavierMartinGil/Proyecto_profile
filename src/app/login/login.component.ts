@@ -33,15 +33,13 @@ export class LoginComponent implements OnInit {
   }
 
   envioLogin() {
-    console.log(this.formulario_login.value)
     this.login.loguear(this.formulario_login.value)
       .then(response => {
-        console.log(response)
-        if (response['id'] == null) {
+        if (response['token_user'] == null) {
           alert('Nombre de usuario o contraseña incorrecta')
         } else {
           this.arrUser = response
-          localStorage.setItem('usuario', response['id'])
+          localStorage.setItem('token_user', response['token_user'])
           this.router.navigate(['/perfil'])
         }
 

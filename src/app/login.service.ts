@@ -13,6 +13,6 @@ export class LoginService {
   }
 
   loguear(values) {
-    return this.http.post(`${this.baseUrl}/usuario`, values).toPromise();
+    return this.http.post(`${this.baseUrl}`, values).toPromise();
   }
 }
