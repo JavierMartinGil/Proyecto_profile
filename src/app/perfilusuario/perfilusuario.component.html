@@ -1,6 +1,16 @@
 <div class="perfil">
     <div class="container">
-        <ul *ngFor="let datos of perfil"></ul>
-        <li>{{datos.id}}</li>
+        <h1>Perfil de usuario</h1>
+        <img src="../../assets/img/man.png">
+        <h2 class="titulo_perfil">
+            Usuario: {{perfil?.username}} || id perfil: {{perfil?.id}}
+        </h2>
+        <h2 class="email_perfil">
+            Email: {{perfil?.email}}
+        </h2>
+        <h3>
+            Dirección: {{perfil?.address}}
+        </h3>
+        <button type="button" class="btn btn-danger btn-lg" (click)="desloguear()">Log Out</button>
     </div>
 </div>

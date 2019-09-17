@@ -19,7 +19,8 @@
                 <input type="password" class="form-control" placeholder="Password" formControlName="password">
             </div>
             <button type="submit" class="btn btn-primary btn-block" [disabled]="!form_registro.valid">Enviar</button>
+            <a [routerLink]="['/']" class="pt-3 d-block">🡐 Volver al inicio</a>
         </form>
-        <h2>{{resultado}}</h2>
+        <h2 class="text-center">{{resultado}}</h2>
     </div>
 </div>

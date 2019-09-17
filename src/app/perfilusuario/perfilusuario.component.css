@@ -1,0 +1,28 @@
+.perfil{
+    background-color: #230233;
+    color: #E63462;
+    text-align: center;
+}
+
+.perfil h1 {
+    font-size: 3.5em;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+h2.titulo_perfil {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.perfil button{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.perfil img {
+    width: 250px!important;
+    margin: 10px auto;
+    display: block;
+}

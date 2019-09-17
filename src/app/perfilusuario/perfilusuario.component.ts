@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PerfilService } from '../perfil.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-perfilusuario',
@@ -9,7 +10,7 @@ import { PerfilService } from '../perfil.service';
 export class PerfilusuarioComponent implements OnInit {
   perfil: any;
 
-  constructor(private verPerfil: PerfilService) {
+  constructor(private verPerfil: PerfilService, private router: Router) {
     this.perfil = []
   }
 
@@ -24,6 +25,9 @@ export class PerfilusuarioComponent implements OnInit {
       })
   }
 
+  desloguear() {
+    this.verPerfil.logout();
 
+  }
 
 }
